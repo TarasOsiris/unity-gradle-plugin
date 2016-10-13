@@ -1,4 +1,4 @@
-package im.getsocial.gradle.unity
+package com.tarasleskiv.gradle.unity
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project

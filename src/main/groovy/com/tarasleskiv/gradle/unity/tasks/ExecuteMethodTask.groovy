@@ -1,4 +1,4 @@
-package im.getsocial.gradle.unity.tasks
+package com.tarasleskiv.gradle.unity.tasks
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.InvalidUserDataException

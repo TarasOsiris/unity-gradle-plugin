@@ -1,4 +1,4 @@
-package im.getsocial.gradle.unity
+package com.tarasleskiv.gradle.unity
 
 class UnityExtension {
     String unityPath
