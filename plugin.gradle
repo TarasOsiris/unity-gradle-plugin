@@ -5,7 +5,7 @@ buildscript {
     }
   }
   dependencies {
-    classpath "gradle.plugin.com.tarasleskiv:unity-gradle-plugin:1.0"
+    classpath "gradle.plugin.com.tarasleskiv:unity-gradle-plugin:1.0.1"
   }
 }
 
@@ -14,4 +14,8 @@ apply plugin: "com.tarasleskiv.gradle.unity"
 unity {
   unityPath = 'xxx'
   projectPath = 'yyy'
+}
+
+task testX() {
+  println("XXXX")
 }
