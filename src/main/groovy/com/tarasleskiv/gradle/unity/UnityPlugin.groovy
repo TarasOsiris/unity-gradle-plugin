@@ -8,7 +8,7 @@ class UnityPlugin implements Plugin<Project> {
     void apply(Project project) {
         project.extensions.create("unity", UnityExtension)
 
-        println(project.unity.unityPath)
+
         project.afterEvaluate {
             if (project.unity.unityPath == null) {
                 throw new InvalidUserDataException("""Path to Unity not set, please specify 'unityPath' in 'unity' plugin config""")
