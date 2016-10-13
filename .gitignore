@@ -5,3 +5,4 @@ build/
 *.iws
 .idea/
 gradle.properties
+local.properties
