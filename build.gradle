@@ -2,8 +2,8 @@ apply plugin: 'groovy'
 apply plugin: 'maven'
 apply plugin: 'signing'
 
-version = '0.7-SNAPSHOT'
-group = 'com.augusttechgroup'
+version = '0.1'
+group = 'com.tarasleskiv'
 def artifact = 'gradle-liquibase-plugin'
 
 configurations {
@@ -72,7 +72,7 @@ uploadPublished {
     }
     name = 'mavenCentralReleaseDeployer'
     repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
-      authentication(userName: mavenCentralUsername, password: mavenCentralPassword)
+      authentication(userName: project.mavenCentralUsername, password: project.mavenCentralPassword)
       releases(updatePolicy: 'always')
       snapshots(updatePolicy: 'never')
     }
@@ -102,8 +102,8 @@ def getPomConfiguration() {
     developers {
       developer {
         id('tlberglund')
-        name('Tim Berglund')
-        email('tlberglund@gmail.com')
+        name('Taras Leskiv')
+        email('leskiv.taras@gmail.com')
       }
     }
     scm {

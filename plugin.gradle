@@ -1,0 +1,19 @@
+//
+// A Gradle build file for testing the plugin built by build.gradle
+//
+
+apply plugin: 'unity'
+
+buildscript {
+  repositories {
+    mavenLocal()
+  }
+  dependencies {
+
+  }
+}
+
+unity {
+  unityPath = 'x'
+  projectPath = 'y'
+}
